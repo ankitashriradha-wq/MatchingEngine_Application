@@ -1,4 +1,4 @@
-Project: MatchingEngine_Task
+Project: MatchingEngine Website
 
 Summary:
 This is an automation project that runs Dashboard tests against a web application using an instrumented Chrome instance. The Dashboard tests validate UI components, data visualizations, and end-to-end flows by driving the browser, capturing results, and reporting pass/fail status.
