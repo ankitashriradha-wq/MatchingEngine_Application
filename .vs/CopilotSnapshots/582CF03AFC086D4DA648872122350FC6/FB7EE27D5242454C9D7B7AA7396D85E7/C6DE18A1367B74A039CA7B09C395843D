@@ -1,0 +1,57 @@
+﻿using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+
+namespace MachineEngine_Task.AutomationTests
+{
+    public class DashboardTest
+    {
+        private IWebDriver? driver;
+
+        [SetUp]
+        public void Setup()
+        {
+            driver = Utilities.DriverFactory.CreateDriver();
+           
+        }
+
+        [TearDown]
+        public void Teardown()
+        {
+            if (driver is not null)
+            {
+                try
+                {
+                    driver.Quit();
+                    driver.Dispose();
+                }
+                catch
+                {
+                    // ignore cleanup errors
+                }
+            }
+
+            driver = null;
+        }
+
+        [Test , Category ("MachineEngine Dashboard")]
+        public void NavigationTest()
+        {
+            
+            var page1 = new Pages.DashboardPage(driver!);
+            // Example usage (adjust selectors and URL to your AUT)
+            driver!.Navigate().GoToUrl(Utilities.Config.BaseUrl);
+           
+            // TODO: add assertions to validate successful login
+
+            //Assert.Pass();
+            Thread.Sleep(1000);
+
+            page1.HandleCookies("allowall");
+            page1.SolutionsLink();
+
+
+        }
+    }
+}

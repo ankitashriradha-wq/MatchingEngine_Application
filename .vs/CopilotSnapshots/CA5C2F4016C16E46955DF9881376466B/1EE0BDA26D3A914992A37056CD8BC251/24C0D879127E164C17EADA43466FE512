@@ -1,0 +1,12 @@
+﻿namespace MachineEngine_Task.Utilities
+{
+    public static class DriverFactory
+    {
+        public static object CreateDriver()
+        {
+            // TODO: return a real driver instance (e.g., Selenium IWebDriver)
+            // Placeholder for now so project compiles without external packages
+            return null!;
+        }
+    }
+}

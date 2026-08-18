@@ -1,0 +1,24 @@
+﻿namespace MachineEngine_Task.Pages
+{
+    public class LoginPage : BasePage
+    {
+        public LoginPage(object driver) : base(driver)
+        {
+        }
+
+        public void EnterUsername(string username)
+        {
+            // TODO: implement using concrete driver (e.g., Selenium IWebDriver)
+        }
+
+        public void EnterPassword(string password)
+        {
+            // TODO: implement using concrete driver (e.g., Selenium IWebDriver)
+        }
+
+        public void Submit()
+        {
+            // TODO: implement using concrete driver
+        }
+    }
+}

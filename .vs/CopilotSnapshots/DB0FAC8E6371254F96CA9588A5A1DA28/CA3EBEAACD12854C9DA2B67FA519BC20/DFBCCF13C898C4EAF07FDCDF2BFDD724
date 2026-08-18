@@ -1,0 +1,102 @@
+﻿using MachineEngine_Task.Resource;
+using MachineEngine_Task.Utilities;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
+
+namespace MachineEngine_Task.Pages
+{
+    class RepertoireManagementPage : BasePage
+    {
+
+        public RepertoireManagementPage(IWebDriver driver) : base(driver)
+        {
+        }
+
+        readonly By ReportUsageMatch = By.XPath("//h5[contains(text(), 'Repertoire and usage matching')]");
+        readonly By RelatedSolutionLabel = By.XPath("//div[@id='content']/section[6]/div/header/div/div/div/div/div/h2");
+        readonly By SoftwareFeatLabel = By.XPath("//div[@id='content']/section[4]/div/header/div/div/div/div/div/h2");
+
+
+        public void FindListItems()
+        {
+
+
+            IWebElement RelatedSolSection = Driver.FindElement(RelatedSolutionLabel);
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(200));
+
+            JavaScriptExecutorHelper.ScrollIntoView(Driver, RelatedSolutionLabel, true);
+
+
+
+            IWebElement ReportUsageMatchLink = Driver.FindElement(ReportUsageMatch);
+
+            Actions actions = new Actions(Driver);
+            actions.MoveToElement(ReportUsageMatchLink);
+            actions.Perform();
+
+
+
+            ReportUsageMatchLink.Click();
+
+            wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(200));
+
+            JavaScriptExecutorHelper.ScrollIntoView(Driver, SoftwareFeatLabel, true);
+
+
+
+            foreach (var expectedFeature in TestData.SoftwareFeatures)
+            {
+                IWebElement output = Driver.FindElement(By.XPath($"//h5[contains(text(), '{expectedFeature}')]"));
+                string val = output.Text;
+                Assert.That(val, Is.EqualTo(expectedFeature), "Strings are not matching");
+                // Console.WriteLine(val);
+                try
+                {
+                    var reportBuilder = new System.Text.StringBuilder();
+                    reportBuilder.AppendLine($"[{System.DateTime.UtcNow:O}] RepertoireManagementPage Report");
+                    reportBuilder.AppendLine($"ThreadId: {System.Environment.CurrentManagedThreadId}");
+                    reportBuilder.AppendLine("Context: RepertoireManagementPage - detailed value dump");
+                    reportBuilder.AppendLine("Value:");
+
+                    if (val == null)
+                    {
+                        reportBuilder.AppendLine("null");
+                    }
+                    else
+                    {
+                        try
+                        {
+                            var json = System.Text.Json.JsonSerializer.Serialize(val, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+                            reportBuilder.AppendLine(json);
+                        }
+                        catch
+                        {
+                            reportBuilder.AppendLine(val.ToString() ?? "<ToString returned null>");
+                        }
+                    }
+
+                    var report = reportBuilder.ToString();
+
+                    // Write to console for immediate visibility
+                    System.Console.WriteLine(report);
+
+                    // Also persist to a log file next to the application base directory; swallow IO errors
+                    try
+                    {
+                        var logPath = System.IO.Path.Combine(System.AppContext.BaseDirectory ?? ".", "RepertoireManagementPage_Report.log");
+                        System.IO.File.AppendAllText(logPath, report + System.Environment.NewLine);
+                    }
+                    catch
+                    {
+                        // Intentionally ignore logging failures to avoid interfering with tests
+                    }
+                }
+                catch
+                {
+                    // Ensure reporting never throws
+                }
+            }
+        }
+    }
+}

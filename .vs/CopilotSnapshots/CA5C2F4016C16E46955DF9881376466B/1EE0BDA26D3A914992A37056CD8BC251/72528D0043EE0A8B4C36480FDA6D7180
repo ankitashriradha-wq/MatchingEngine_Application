@@ -1,0 +1,12 @@
+﻿namespace MachineEngine_Task.Pages
+{
+    public abstract class BasePage
+    {
+        protected object Driver { get; }
+
+        protected BasePage(object driver)
+        {
+            Driver = driver;
+        }
+    }
+}

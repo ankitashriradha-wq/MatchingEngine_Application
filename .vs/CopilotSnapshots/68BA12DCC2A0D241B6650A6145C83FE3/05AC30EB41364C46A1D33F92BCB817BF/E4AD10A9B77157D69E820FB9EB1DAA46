@@ -1,0 +1,37 @@
+﻿using OpenQA.Selenium;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MachineEngine_Task.Hooks
+{
+    public class Base
+    {
+        private IWebDriver? driver;
+        
+        [SetUp]
+        public void Setup()
+        {
+            driver = Utilities.DriverFactory.CreateDriver();
+        }
+
+        [TearDown]
+        public void Teardown()
+        {
+            if (driver is not null)
+            {
+                try
+                {
+                    driver.Quit();
+                    driver.Dispose();
+                }
+                catch
+                {
+                    // ignore cleanup errors
+                }
+            }
+
+            driver = null;
+        }
+    }
+}

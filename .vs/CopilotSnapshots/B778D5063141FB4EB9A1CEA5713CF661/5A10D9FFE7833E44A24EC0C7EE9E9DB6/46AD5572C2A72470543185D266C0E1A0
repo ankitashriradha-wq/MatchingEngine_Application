@@ -1,0 +1,42 @@
+﻿using OpenQA.Selenium;
+
+namespace MachineEngine_Task.Pages
+{
+
+    public class DashboardPage : BasePage
+    {
+
+        public DashboardPage(IWebDriver driver) : base(driver)
+        {
+        }
+
+        public void Cookies_AllowAll()
+        {
+            // Example implementation; update selectors to match your application
+            var ck_allowAll  = Driver.FindElement(By.Id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"));
+            ck_allowAll.Click();
+            
+        }
+
+        public void Cookies_AollowSelection()
+        {
+            var ck_allowSelect = Driver.FindElement(By.Id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection"));
+            ck_allowSelect.Click();
+            
+        }
+
+        public void Cookies_Deny()
+        {
+            var ck_Deny = Driver.FindElement(By.Id("CybotCookiebotDialogBodyButtonDecline"));
+            ck_Deny.Click();
+        }
+
+        public void SolutiionsLink()
+        {
+            var clk_SolLink = Driver.FindElement(By.CssSelector("span#nav-toggle-solutions.MainNavLink_linkEl__ZECPn"));
+            clk_SolLink.Click();
+
+
+        }
+    }
+}

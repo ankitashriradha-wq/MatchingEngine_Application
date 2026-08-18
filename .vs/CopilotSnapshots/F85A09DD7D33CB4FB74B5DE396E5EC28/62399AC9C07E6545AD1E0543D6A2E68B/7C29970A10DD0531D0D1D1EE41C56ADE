@@ -1,0 +1,56 @@
+﻿using MachineEngine_Task.Resource;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Text;
+
+namespace MachineEngine_Task.Pages
+{
+    class RepertoireManagementPage : BasePage
+    {
+
+        IList<IWebElement> softwareFeaturesList = [];
+        string softwareFeatures;
+
+        WebDriverWait wait;
+
+        public RepertoireManagementPage(IWebDriver driver) : base(driver)
+        {
+        }
+
+        readonly By RepertoireMatch_ele = By.XPath("//div/a/div[@class ='Card_inner__iihQe']/div/h5[contains(text(), 'Repertoire and usage matching')]");
+        readonly By cc = By.XPath("//h5[contains(text(), 'Increase the auto-matching rates')]");
+        readonly By Deny_element = By.Id("CybotCookiebotDialogBodyButtonDecline");
+        readonly By Solutions_Link = By.CssSelector("span#nav-toggle-solutions.MainNavLink_linkEl__ZECPn");
+        readonly By RepertoireManagementModule = By.XPath("//a/span[contains(text(), 'Repertoire management')]");
+
+
+        public void FindListItems(string itemText)
+         {
+
+            foreach(var softwareFeatures in softwareFeaturesList)
+            {
+                Driver.FindElements(By.XPath($"//h5[contains(text(), '{softwareFeatures}')]")).ToList();
+            }
+            softwareFeaturesList = Driver.FindElements(By.XPath($"//h5[contains(text(), '{softwareFeatures}')]")).ToList();
+
+            
+           
+
+          
+          
+
+            
+
+
+
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,67 @@
+﻿using MachineEngine_Task.Resource;
+using MachineEngine_Task.Utilities;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Text;
+
+namespace MachineEngine_Task.Pages
+{
+    class RepertoireManagementPage : BasePage
+    {
+
+        IList<IWebElement> softwareFeaturesList = new List<IWebElement>();
+        string softwareFeatures;
+
+        WebDriverWait wait;
+
+        public RepertoireManagementPage(IWebDriver driver) : base(driver)
+        {
+        }
+
+        
+       
+
+        readonly By ReportUsageMatch = By.XPath("//h5[contains(text(), 'Repertoire Management')]");
+        readonly By RelatedSolutionLabel = By.XPath("//div[@id='content']/section[6]/div/header/div/div/div/div/div/h2");
+
+
+        public void FindListItems()
+        {
+
+
+            IWebElement RelatedSolSection = Driver.FindElement(RelatedSolutionLabel);
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(200));
+            JavaScriptExecutorHelper.ScrollIntoView(Driver, ReportUsageMatch, true);
+
+            IWebElement ReportUsageMatchLink = Driver.FindElement(ReportUsageMatch);
+            wait.Until(ExpectedConditions.ElementToBeClickable(ReportUsageMatchLink));
+
+
+
+
+            /*   IWebElement element = new WebDriverWait(Driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.ElementIsVisible(ReportUsageMatch));
+               IJavaScriptExecutor js = (IJavaScriptExecutor)Driver;
+               js.ExecuteScript("arguments[0].scrollIntoView();", element);*/
+
+
+
+
+            ReportUsageMatchLink.Click();
+
+            foreach (var expectedFeature in TestData.SoftwareFeatures)
+            {
+                IWebElement output = Driver.FindElement(By.XPath($"//h5[contains(text(), '{expectedFeature}')]"));
+                string val = output.Text;
+                Assert.That(val, Is.EqualTo(expectedFeature), "Strings are not matching");
+                Console.WriteLine(val);
+
+            }
+        }
+    }
+}

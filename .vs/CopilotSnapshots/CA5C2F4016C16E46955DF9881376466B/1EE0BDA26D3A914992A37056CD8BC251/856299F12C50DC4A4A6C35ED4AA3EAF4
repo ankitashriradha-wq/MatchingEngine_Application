@@ -1,0 +1,28 @@
+﻿namespace MachineEngine_Task.AutomationTests
+{
+    public class LoginTests
+    {
+        private object? driver;
+
+        [SetUp]
+        public void Setup()
+        {
+            driver = Utilities.DriverFactory.CreateDriver();
+        }
+
+        [TearDown]
+        public void Teardown()
+        {
+            // TODO: quit/cleanup driver when implemented
+            driver = null;
+        }
+
+        [Test]
+        public void LoginTest()
+        {
+            var loginPage = new Pages.LoginPage(driver!);
+            // TODO: add interactions and assertions
+            Assert.Pass("POM structure in place");
+        }
+    }
+}

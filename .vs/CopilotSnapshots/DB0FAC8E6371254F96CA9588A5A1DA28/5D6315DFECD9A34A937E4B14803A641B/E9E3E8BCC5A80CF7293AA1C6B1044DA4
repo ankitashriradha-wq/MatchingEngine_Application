@@ -1,0 +1,11 @@
+﻿Project: MachineEngine_Task
+
+Summary:
+This project implements the Machine Engine task responsible for orchestrating automated browser-based operations and test execution. It initializes test host communication, manages test requests, and coordinates data collection and lifecycle events for test runs. The implementation uses an async processing pipeline (StartProcessingAsync) to handle incoming requests and dispatch work to test managers.
+
+Chrome dependency:
+chrome.exe version: CHROME_EXE_VERSION_HERE
+
+Notes:
+- Replace CHROME_EXE_VERSION_HERE with the exact chrome.exe version consumed by this project (e.g., 116.0.5845.96).
+- The Invoke method was converted to async to avoid blocking waits on StartProcessingAsync. Ensure callers are updated to await Invoke where used.

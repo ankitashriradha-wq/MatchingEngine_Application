@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MachineEngine_Task.Resource
+{
+    public static class TestData
+    {
+        public static System.Collections.Generic.IReadOnlyList<string> SoftwareFeatures { get; } = new System.Collections.ObjectModel.ReadOnlyCollection<string>(new System.Collections.Generic.List<string>
+        {
+            "Common Works Registration dashboard",
+            "Agreement maintenance",
+            "Built-in member portal",
+            "REST API for work integration",
+            "Full data lakehouse"
+        });
+    }
+}

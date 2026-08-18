@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MachineEngine_Task.Resource
+{
+    public static class TestData
+    {
+        public const string SoftwareFeatures = @"Common Works Registration dashboard
+
+Agreement maintenance
+
+
+Built-in member portal
+
+
+REST API for work integration
+
+
+Full data lakehouse";
+    }
+}

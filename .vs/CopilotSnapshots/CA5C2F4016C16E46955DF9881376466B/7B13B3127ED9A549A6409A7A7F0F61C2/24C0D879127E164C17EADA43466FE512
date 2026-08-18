@@ -1,0 +1,38 @@
+﻿using System;
+using System.IO;
+using System.Reflection;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+
+namespace MachineEngine_Task.Utilities
+{
+    public static class CommonHelper
+    {
+        // Returns the directory of the executing assembly; falls back to AppContext.BaseDirectory.
+        public static string AssemblyDirectory =>
+            Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? AppContext.BaseDirectory;
+    }
+
+    public static class DriverFactory
+    {
+        public static IWebDriver CreateDriver()
+        {
+            // Basic ChromeDriver creation. Adjust options and service as needed.
+            var options = new ChromeOptions();
+            // Uncomment headless for CI environments
+            // options.AddArgument("--headless=new");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+
+            Console.WriteLine("Entering Chromesetup");
+            var driverPath = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Create default service (will use bundled chromedriver from package)
+            var service = ChromeDriverService.CreateDefaultService(driverPath + @"\chromedriver.exe");
+            service.HideCommandPromptWindow = true;
+
+            return new ChromeDriver(service, options);
+        }
+    }
+}

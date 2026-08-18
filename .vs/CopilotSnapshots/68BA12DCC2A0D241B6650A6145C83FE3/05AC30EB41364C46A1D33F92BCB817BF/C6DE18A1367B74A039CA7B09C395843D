@@ -1,0 +1,43 @@
+﻿using MachineEngine_Task.Hooks;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+
+namespace MachineEngine_Task.AutomationTests
+{
+    public class DashboardTest
+    {
+        private IWebDriver? driver;
+
+      
+
+
+        [Test , Category ("MachineEngine Dashboard")]
+        public void NavigationTest()
+        {
+            
+            var page1 = new Pages.DashboardPage(driver!);
+            // Example usage (adjust selectors and URL to your AUT)
+            driver!.Navigate().GoToUrl(Utilities.Config.BaseUrl);
+           
+            // TODO: add assertions to validate successful login
+
+            //Assert.Pass();
+            Thread.Sleep(1000);
+
+            page1.HandleCookies("allowall");
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+        
+
+
+
+            page1.SolutionsLink();
+
+
+        }
+    }
+}

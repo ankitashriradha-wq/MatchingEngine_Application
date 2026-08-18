@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\tests\\dashboardtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:tests\\dashboardtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\pages\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:pages\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\pages\\repertoiremanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:pages\\repertoiremanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\utilities\\javascriptexecutorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:utilities\\javascriptexecutorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\hooks\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:hooks\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\utilities\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:utilities\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\utilities\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:utilities\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\resource\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:resource\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\matchingengine_task.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:matchingengine_task.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ankit\\AppData\\Local\\SourceServer\\b352ca670184ee43fe2ecda62ef73d8450d7b7f143fd888d60ee1725dac3ee93\\src\\testhost.x86\\DefaultEngineInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|d:\\github_projects\\c#work\\machineengine_task\\matchingengine_task\\read.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{BD4F746E-7D9A-222F-E135-2D21AF99E06C}|MatchingEngine_Task.csproj|solutionrelative:matchingengine_task\\read.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestData.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Resource\\TestData.cs",
+              "RelativeDocumentMoniker": "Resource\\TestData.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Resource\\TestData.cs",
+              "RelativeToolTip": "Resource\\TestData.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvxUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T19:51:02.572Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JavaScriptExecutorHelper.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\JavaScriptExecutorHelper.cs",
+              "RelativeDocumentMoniker": "Utilities\\JavaScriptExecutorHelper.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\JavaScriptExecutorHelper.cs",
+              "RelativeToolTip": "Utilities\\JavaScriptExecutorHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T21:42:11.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepertoireManagementPage.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\RepertoireManagementPage.cs",
+              "RelativeDocumentMoniker": "Pages\\RepertoireManagementPage.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\RepertoireManagementPage.cs",
+              "RelativeToolTip": "Pages\\RepertoireManagementPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T18:01:24.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardPage.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\DashboardPage.cs",
+              "RelativeDocumentMoniker": "Pages\\DashboardPage.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\DashboardPage.cs",
+              "RelativeToolTip": "Pages\\DashboardPage.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:44:16.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardTest.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Tests\\DashboardTest.cs",
+              "RelativeDocumentMoniker": "Tests\\DashboardTest.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Tests\\DashboardTest.cs",
+              "RelativeToolTip": "Tests\\DashboardTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:44:32.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Base.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Hooks\\Base.cs",
+              "RelativeDocumentMoniker": "Hooks\\Base.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Hooks\\Base.cs",
+              "RelativeToolTip": "Hooks\\Base.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T22:05:14.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DriverFactory.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\DriverFactory.cs",
+              "RelativeDocumentMoniker": "Utilities\\DriverFactory.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\DriverFactory.cs",
+              "RelativeToolTip": "Utilities\\DriverFactory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:44:24.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Config.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\Config.cs",
+              "RelativeDocumentMoniker": "Utilities\\Config.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Utilities\\Config.cs",
+              "RelativeToolTip": "Utilities\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:44:28.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MatchingEngine_Task.csproj",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\MatchingEngine_Task.csproj",
+              "RelativeDocumentMoniker": "MatchingEngine_Task.csproj",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\MatchingEngine_Task.csproj",
+              "RelativeToolTip": "MatchingEngine_Task.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-17T10:47:17.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\BasePage.cs",
+              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\Pages\\BasePage.cs",
+              "RelativeToolTip": "Pages\\BasePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:44:09.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Read.md",
+              "DocumentMoniker": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\MatchingEngine_Task\\Read.md",
+              "RelativeDocumentMoniker": "MatchingEngine_Task\\Read.md",
+              "ToolTip": "D:\\Github_Projects\\C#Work\\MachineEngine_Task\\MatchingEngine_Task\\Read.md",
+              "RelativeToolTip": "MatchingEngine_Task\\Read.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-08-18T08:41:10.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DefaultEngineInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\ankit\\AppData\\Local\\SourceServer\\b352ca670184ee43fe2ecda62ef73d8450d7b7f143fd888d60ee1725dac3ee93\\src\\testhost.x86\\DefaultEngineInvoker.cs",
+              "ToolTip": "C:\\Users\\ankit\\AppData\\Local\\SourceServer\\b352ca670184ee43fe2ecda62ef73d8450d7b7f143fd888d60ee1725dac3ee93\\src\\testhost.x86\\DefaultEngineInvoker.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAmwJ4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T23:52:50.557Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MachineEngine_Task.Pages
+{
+     class RepertoireManagementPage :BasePage
+    {
+
+
+
+        WebDriverWait wait;
+
+        public RepertoireManagementPage(IWebDriver driver) : base(driver)
+        {
+        }
+
+        readonly By RepertoireMatch_ele = By.XPath("//div/a/div[@class ='Card_inner__iihQe']/div/h5[contains(text(), 'Repertoire and usage matching')]");
+        readonly By  = By.XPath("//h5[contains(text(), 'Increase the auto-matching rates')]");
+        readonly By Deny_element = By.Id("CybotCookiebotDialogBodyButtonDecline");
+        readonly By Solutions_Link = By.CssSelector("span#nav-toggle-solutions.MainNavLink_linkEl__ZECPn");
+        readonly By RepertoireManagementModule = By.XPath("//a/span[contains(text(), 'Repertoire management')]");
+
+
+    }
+}
